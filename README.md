@@ -10,4 +10,10 @@ pillow == 8.0.1<br>
 tqdm == 4.52.0<br>
 yaml == 0.2.5<br>
 yacs == 0.1.8<br>
+# Experiment environment 
+2 Titan X GPUs
+CUDA 10.1
+# Self-Supervised Pre-training
+ex)
+
 
