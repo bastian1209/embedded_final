@@ -1,4 +1,4 @@
-# embedded_final 
+# Embedded Systems and Applications Final Project 2020
 self-supervised contrastive learning with improved InfoNCE
 # requirements
 python == 3.6<br>
