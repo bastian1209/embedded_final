@@ -1,7 +1,7 @@
 # Embedded Systems and Applications Final Project 2020
 self-supervised contrastive learning with improved InfoNCE
 # Requirements
-* python == 3.6\\
+* python == 3.6\
 * pytorch == 1.1.0<br>
 * torchvision == 0.3.0<br>
 * tensorboard == 2.4.0<br>
