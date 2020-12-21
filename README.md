@@ -14,7 +14,7 @@ self-supervised contrastive learning with improved InfoNCE
 * 2 Titan X GPUs
 * CUDA 10.1
 # Self-Supervised Pre-training
-ex)<br>
+* ex) MoCo with EqCo rule with $K=512$ 
 python3 main.py --method
 
 
