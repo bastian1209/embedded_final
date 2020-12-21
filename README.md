@@ -14,10 +14,19 @@ self-supervised contrastive learning with improved InfoNCE
 * 2 Titan X GPUs
 * CUDA 10.1
 # Self-Supervised Pre-training
-* MoCo with EqCo (K=512, alpha=16348) and DCL, dataset : CIFAR10, encoder : resnet18
+* ex) MoCo with EqCo (K=512, alpha=16348) and DCL, dataset : CIFAR10, encoder : resnet18
 ```sh
-python3 main.py --method moco --data cifar --arch resnet18 --use_eqco true --eqco_k 512 --use_dcl true
+python3 main.py --method moco --data cifar --arch resnet18 
+                 --use_eqco true --eqco_k 512 --use_dcl true
                 --world-size 1 --rank 0 --dist-url tcp://localhost:10001
                 --experiment_name moco_dcl_eqco_512_cifar_r18
 ```
-
+# Linear Evaluation
+* ex) run linear evaluation on pre-trained MoCo
+```sh
+python3 linear_eval.py --method moco 
+                       --model-path ./save/{path to experiment}/{encoder arcitecture}_final.pth.tar 
+                       --data cifar
+                       --batch-size 128
+                       --lr 10
+```
