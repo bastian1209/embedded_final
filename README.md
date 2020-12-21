@@ -14,7 +14,8 @@ self-supervised contrastive learning with improved InfoNCE
 * 2 Titan X GPUs
 * CUDA 10.1
 # Self-Supervised Pre-training
-* ex) MoCo with EqCo (K=512, alpha=16348) and DCL, dataset : CIFAR10, encoder : resnet18\\
-  python3 main.py --method moco --data cifar --arch resnet18 
-
+* MoCo with EqCo (K=512, alpha=16348) and DCL, dataset : CIFAR10, encoder : resnet18
+'''
+python3 main.py --method moco --data cifar --arch resnet18 
+'''
 
