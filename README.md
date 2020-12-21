@@ -15,7 +15,7 @@ self-supervised contrastive learning with improved InfoNCE
 * CUDA 10.1
 # Self-Supervised Pre-training
 * MoCo with EqCo (K=512, alpha=16348) and DCL, dataset : CIFAR10, encoder : resnet18
-'''sh
+```sh
 python3 main.py --method moco --data cifar --arch resnet18 
-'''
+```
 
